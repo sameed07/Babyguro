@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".SplashScreen"
     android:orientation="vertical"
-    android:gravity="center"
     android:background="@color/white"
     >
 
@@ -14,9 +13,45 @@
         android:layout_width="310dp"
         android:layout_height="110dp"
         android:layout_gravity="center"
-        android:src="@mipmap/splash_logo"
-        android:layout_marginBottom="200dp"
+        android:src="@drawable/main_screen_logo"
+        android:layout_marginTop="200dp"
 
+        />
+    <TextView
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="46dp"
+        android:layout_marginRight="46dp"
+        android:text="BabyGuro is your one-stop shop for all sorts of baby
+accessories. We have a wide range of clothes, shoes,
+toys, and onesies for your little one."
+        android:textSize="12sp"/>
+
+    <Button
+        android:id="@+id/btnCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:text="I'm a Customer"
+        android:textAllCaps="false"
+        android:background="@color/blue_theme"
+        android:textColor="@color/white"
+
+        />
+    <Button
+        android:id="@+id/btnVendor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:text="I'm a Vendor"
+        android:textAllCaps="false"
+        android:background="@color/blue_theme"
+        android:textColor="@color/white"
         />
 
 </LinearLayout>
