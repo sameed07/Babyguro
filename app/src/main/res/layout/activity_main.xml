@@ -23,15 +23,13 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="46dp"
         android:layout_marginRight="46dp"
-        android:text="BabyGuro is your one-stop shop for all sorts of baby
-accessories. We have a wide range of clothes, shoes,
-toys, and onesies for your little one."
+        android:text="@string/main_screen_text"
         android:textSize="12sp"/>
 
     <Button
         android:id="@+id/btnCustomer"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="42dp"
         android:layout_marginTop="50dp"
         android:layout_marginRight="32dp"
         android:layout_marginLeft="32dp"
@@ -44,7 +42,7 @@ toys, and onesies for your little one."
     <Button
         android:id="@+id/btnVendor"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="42dp"
         android:layout_marginTop="12dp"
         android:layout_marginRight="32dp"
         android:layout_marginLeft="32dp"
