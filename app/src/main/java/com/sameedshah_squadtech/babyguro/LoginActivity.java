@@ -1,5 +1,6 @@
 package com.sameedshah_squadtech.babyguro;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -32,7 +33,9 @@ public class LoginActivity extends AppCompatActivity {
         btnSignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(LoginActivity.this,"Register Successful",Toast.LENGTH_LONG).show();
+
+                startActivity(new Intent(LoginActivity.this, CustomerRegisterActivity.class));
+                finish();
             }
         });
     }

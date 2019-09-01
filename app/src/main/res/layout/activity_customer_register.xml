@@ -1,9 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CustomerRegisterActivity">
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:src="@drawable/main_screen_logo"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:textSize="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            />
+        <EditText
+            android:id="@+id/edtPassword"
+            android:inputType="textPassword"
+            android:textSize="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            />
+
+        <EditText
+            android:id="@+id/edtConfrimPassword"
+            android:inputType="textPassword"
+            android:textSize="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            />
+
+        <Button
+            android:id="@+id/btnCustomerRegister"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:background="@color/blue_theme"
+            android:textColor="@color/white"
+
+            />
+
+
+        <TextView
+            android:id="@+id/txtAlreadyHaveAccount"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I Already have an account"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Term of use. Privacy Policy"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+</ScrollView>
