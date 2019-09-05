@@ -53,30 +53,7 @@ public class HomeActivity extends AppCompatActivity {
         ab.setDisplayHomeAsUpEnabled(true);
         ab.setHomeAsUpIndicator(R.drawable.ic_side_menu_24dp);
     }
-    private void configureNavigationDrawer() {
-        NavigationView navView =  findViewById(R.id.navigation);
-        navView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(MenuItem menuItem) {
 
-                //f  = null;
-                int itemId = menuItem.getItemId();
-                if (itemId == R.id.action_home) {
-                   // f = new HomeFragment();
-                } else if (itemId == R.id.action_cat) {
-                    //f = new CategoryFragment();
-                }
-//                if (f != null) {
-//                    FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-//                    transaction.replace(R.id.frame, f);
-//                    transaction.commit();
-//                    drawerLayout.closeDrawers();
-//                    return true;
-//                }
-                 return false;
-            }
-        });
-    }
 
 
     @Override
