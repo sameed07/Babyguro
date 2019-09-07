@@ -31,6 +31,7 @@
         android:layout_gravity="start"
         app:menu="@menu/nav_items"
         app:headerLayout="@layout/header_layout"
+        android:iconTint="@color/blue_theme"
         />
 
 </android.support.v4.widget.DrawerLayout>

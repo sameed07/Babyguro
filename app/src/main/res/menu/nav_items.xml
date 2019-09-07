@@ -1,17 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
     <group android:checkableBehavior="single">
         <item android:id="@+id/action_home"
             android:title="Home"
+            android:icon="@drawable/home_icon"
+
              />
-        <item android:id="@+id/action_cat"
-            android:title="Category"
+        <item android:id="@+id/action_dashboard"
+            android:title="Dashboard"
+            android:icon="@drawable/dashboard_icon"
+
               />
-        <item android:id="@+id/mWishlist"
-            android:title="My Wishlist"
+        <item android:id="@+id/action_inbox"
+            android:title="Inbox"
+            android:icon="@drawable/inbox"
              />
-        <item android:id="@+id/action_help"
-            android:title="Help center"
+        <item android:id="@+id/action_orders"
+            android:title="My Orders"
               />
+        <item android:id="@+id/action_notifications"
+            android:title="My Orders"
+            />
+
     </group>
+    <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/action_edt_profile"
+                android:title="Edit Profile " />
+            <item
+                android:id="@+id/action_shop"
+                android:title="Shop" />
+
+            <item
+                android:id="@+id/action_vendor"
+                android:title="Vendor Market Place"
+                />
+            <item
+                android:id="@+id/action_setting"
+                android:title="Setting" />
+        </menu>
+
+    </item>
+
+    <item android:title="Other">
+    <menu>
+        <item
+            android:id="@+id/action_contactus"
+            android:title="Contact us" />
+        <item
+            android:id="@+id/action_about"
+            android:title="About us" />
+
+        <item
+            android:id="@+id/action_logout"
+            android:title="Log out"
+            />
+
+    </menu>
+    </item>
 </menu>
