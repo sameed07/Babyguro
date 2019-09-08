@@ -7,5 +7,6 @@
     <color name="pink_theme">#FF009D</color>
     <color name="white">#FFFF</color>
     <color name="gray">#BBBBBB</color>
+    <color name="offwhite">#F9F9F9</color>
     <color name="black">#444444</color>
 </resources>

@@ -3,7 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/offwhite">
 
 
     <include layout="@layout/toolbar"/>
@@ -37,6 +38,54 @@
     </LinearLayout>
 
 
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="8dp"
+        >
+
+
+        <Button
+            android:paddingLeft="10dp"
+            android:layout_margin="4dp"
+            android:shadowRadius="12"
+            android:layout_weight="1"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:textAllCaps="false"
+            android:background="@color/white"
+            android:drawableStart="@drawable/shop_icon"
+            android:text="Update Account"
+            />
+
+
+        <Button
+            android:paddingLeft="12dp"
+            android:textAllCaps="false"
+            android:text="Become a Vendor"
+            android:layout_margin="4dp"
+            android:shadowRadius="12"
+            android:layout_weight="1"
+            android:layout_width="160dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/shop_icon"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Orders"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold"
+        />
 
 
 </LinearLayout>
