@@ -6,5 +6,6 @@
     <color name="blue_theme">#31D5FC</color>
     <color name="pink_theme">#FF009D</color>
     <color name="white">#FFFF</color>
+    <color name="gray">#BBBBBB</color>
     <color name="black">#444444</color>
 </resources>
