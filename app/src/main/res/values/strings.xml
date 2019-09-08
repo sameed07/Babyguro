@@ -5,4 +5,7 @@
     <string name="main_screen_text">BabyGuro is your one-stop shop for all sorts of baby
 accessories. We have a wide range of clothes, shoes,
 toys, and onesies for your little one.</string>
+    <string name="dashboard_text">From your account dashboard you can view your
+recent orders, manage your shipping and billing
+addresses, and edit your password and account details.</string>
 </resources>

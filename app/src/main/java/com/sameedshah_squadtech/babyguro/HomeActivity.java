@@ -20,9 +20,8 @@ public class HomeActivity extends AppCompatActivity {
 
     private DrawerLayout drawerLayout;
     private Toolbar toolbar;
-    private NavigationView navigationView;
 
-    ActionBarDrawerToggle mToggle;
+
 
     Fragment f;
     HomeFragment hm;
@@ -89,6 +88,8 @@ public class HomeActivity extends AppCompatActivity {
                 if (itemId == R.id.action_home) {
                     f = new HomeFragment();
                 } else if (itemId == R.id.action_dashboard) {
+                    //toolbar.setTitle("Dashboard");
+
                     f = new DashboardFragment();
                 }
                 if (f != null) {
