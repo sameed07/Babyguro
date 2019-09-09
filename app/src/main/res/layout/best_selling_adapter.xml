@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        >
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/asset_one" />
+
+        <ImageView
+            android:id="@+id/addToCartBtn"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/cart_icon"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="85dp"/>
+    </FrameLayout>
+
+    <LinearLayout
+
+        android:weightSum="6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/ic_star_black_24dp"/>
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/ic_star_black_24dp"/>
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/ic_star_black_24dp"/>
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/ic_star_black_24dp"/>
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/ic_star_black_24dp"/>
+
+        <TextView
+            android:id="@+id/txtRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(45)"
+            android:layout_marginLeft="4dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:text="Product Name"
+        android:textStyle="bold"
+        android:id="@+id/txt_product_name"
+        />
+    <TextView
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vendor's Name"
+        android:textColor="@color/gray"
+        android:id="@+id/txt_vendor_name"
+        />
+    <TextView
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$20.45"
+        android:id="@+id/txt_Price_name"
+        />
+
+</LinearLayout>

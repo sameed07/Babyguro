@@ -26,6 +26,7 @@ public class HomeFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.home_fragment, container, false);
 
+        //dummy images list
         int[] images = {R.drawable.asset_one,R.drawable.asset_one,R.drawable.asset_one
                 ,R.drawable.asset_one,R.drawable.asset_one,R.drawable.asset_one,
                 R.drawable.asset_one};

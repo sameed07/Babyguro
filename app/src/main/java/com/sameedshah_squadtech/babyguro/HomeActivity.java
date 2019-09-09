@@ -15,6 +15,7 @@ import android.view.MenuItem;
 
 import com.sameedshah_squadtech.babyguro.Fragments.DashboardFragment;
 import com.sameedshah_squadtech.babyguro.Fragments.HomeFragment;
+import com.sameedshah_squadtech.babyguro.Fragments.ShopFragment;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -91,6 +92,9 @@ public class HomeActivity extends AppCompatActivity {
                     //toolbar.setTitle("Dashboard");
 
                     f = new DashboardFragment();
+                }
+                else if(itemId == R.id.action_shop){
+                    f = new ShopFragment();
                 }
                 if (f != null) {
                     FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
