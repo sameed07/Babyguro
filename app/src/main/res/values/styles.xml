@@ -11,4 +11,7 @@
     <style name="toolbar_theme">
         <item name="android:textColorSecondary">#000000</item>
     </style>
+    <style name="menu_bar_theme">
+        <item name="android:textColorSecondary">#FFFFFF</item>
+    </style>
 </resources>

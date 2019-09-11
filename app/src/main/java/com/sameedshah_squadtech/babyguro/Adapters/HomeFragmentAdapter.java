@@ -1,6 +1,7 @@
 package com.sameedshah_squadtech.babyguro.Adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -10,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.sameedshah_squadtech.babyguro.HomeActivity;
+import com.sameedshah_squadtech.babyguro.ProductActivity;
 import com.sameedshah_squadtech.babyguro.R;
 
 public class HomeFragmentAdapter extends  RecyclerView.Adapter<HomeFragmentAdapter.ViewHolder> {
@@ -38,6 +40,13 @@ public class HomeFragmentAdapter extends  RecyclerView.Adapter<HomeFragmentAdapt
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
 
             viewHolder.mProdictImage.setImageResource(images[i]);
+            viewHolder.mProdictImage.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(mContext, ProductActivity.class);
+                    mContext.startActivity(intent);
+                }
+            });
 
     }
 
