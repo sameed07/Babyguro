@@ -1,0 +1,22 @@
+package com.sameedshah_squadtech.babyguro.Fragments;
+
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.sameedshah_squadtech.babyguro.R;
+
+public class VendorInfoFragment extends Fragment {
+
+    public VendorInfoFragment(){}
+
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View PageTree = inflater.inflate(R.layout.vendor_info_fragment, container, false);
+
+
+
+        return PageTree;
+    }
+}
