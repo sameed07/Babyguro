@@ -25,9 +25,9 @@ public class ProductActivity extends AppCompatActivity {
 
         MyTabs = (TabLayout)findViewById(R.id.MyTabs);
         MyPage = (ViewPager)findViewById(R.id.MyPage);
-        MyTabs.setSelectedTabIndicatorColor(Color.parseColor("#FF0000"));
-        MyTabs.setSelectedTabIndicatorHeight((int) (5 * getResources().getDisplayMetrics().density));
-        MyTabs.setTabTextColors(Color.parseColor("#727272"), Color.parseColor("#ffffff"));
+        MyTabs.setSelectedTabIndicatorColor(Color.parseColor("#FF009D"));
+        MyTabs.setSelectedTabIndicatorHeight((int) (3 * getResources().getDisplayMetrics().density));
+        MyTabs.setTabTextColors(Color.parseColor("#727272"), Color.parseColor("#000000"));
 
         MyTabs.setupWithViewPager(MyPage);
         SetUpViewPager(MyPage);
@@ -35,10 +35,10 @@ public class ProductActivity extends AppCompatActivity {
     public void SetUpViewPager (ViewPager viewpage){
         MyViewPageAdapter Adapter = new MyViewPageAdapter(getSupportFragmentManager());
 
-        Adapter.AddFragmentPage(new ProductDetailFragment(), "Product Detail");
+        Adapter.AddFragmentPage(new ProductDetailFragment(), "Detail");
         Adapter.AddFragmentPage(new ProductReviews(), "Review");
         Adapter.AddFragmentPage(new VendorInfoFragment(), "Vendor Info");
-        Adapter.AddFragmentPage(new MoreProductFragment(), "More Products");
+        Adapter.AddFragmentPage(new MoreProductFragment(), "More Items");
         //We Need Fragment class now
 
         viewpage.setAdapter(Adapter);
