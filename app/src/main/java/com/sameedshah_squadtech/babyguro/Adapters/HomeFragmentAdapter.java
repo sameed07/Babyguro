@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.sameedshah_squadtech.babyguro.HomeActivity;
 import com.sameedshah_squadtech.babyguro.ProductActivity;
 import com.sameedshah_squadtech.babyguro.R;
 
