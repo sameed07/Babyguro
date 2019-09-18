@@ -6,6 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.sameedshah_squadtech.babyguro.R;
 
@@ -32,6 +33,8 @@ public class VendorMarketplaceAdapter extends RecyclerView.Adapter<VendorMarketp
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
 
+        viewHolder.vendor_profile_Image.setImageResource(images[i]);
+
     }
 
     @Override
@@ -39,9 +42,14 @@ public class VendorMarketplaceAdapter extends RecyclerView.Adapter<VendorMarketp
         return images.length;
     }
 
+
     public class ViewHolder extends RecyclerView.ViewHolder {
+
+        ImageView vendor_profile_Image;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+
+            vendor_profile_Image = itemView.findViewById(R.id.vendor_profile_pic);
         }
     }
 }
