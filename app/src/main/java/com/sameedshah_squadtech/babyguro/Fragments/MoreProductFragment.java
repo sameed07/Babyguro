@@ -2,6 +2,7 @@ package com.sameedshah_squadtech.babyguro.Fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -32,4 +33,6 @@ public class MoreProductFragment extends Fragment {
 
         return view;
     }
+
+
 }

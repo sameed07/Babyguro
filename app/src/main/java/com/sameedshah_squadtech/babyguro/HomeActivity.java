@@ -14,6 +14,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.sameedshah_squadtech.babyguro.Fragments.DashboardFragment;
+import com.sameedshah_squadtech.babyguro.Fragments.EditProfileFragment;
 import com.sameedshah_squadtech.babyguro.Fragments.HomeFragment;
 import com.sameedshah_squadtech.babyguro.Fragments.ShopFragment;
 import com.sameedshah_squadtech.babyguro.Fragments.VendorMarketPlaceFragment;
@@ -100,6 +101,10 @@ public class HomeActivity extends AppCompatActivity {
                 else if(itemId == R.id.action_vendor){
 
                     f = new VendorMarketPlaceFragment();
+                }
+                else if(itemId == R.id.action_edt_profile){
+
+                    f = new EditProfileFragment();
                 }
                 if (f != null) {
                     FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
